@@ -69,7 +69,7 @@ int main() {
     glEnable(GL_DEPTH_TEST);
 
     Shader lightingShader("shader/multiple_lights.vs", "shader/multiple_lights.fs");
-    Shader lightCubeShader("light_cube.vs", "light_cube.fs");
+    Shader lightCubeShader("shader/light_cube.vs", "shader/light_cube.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
