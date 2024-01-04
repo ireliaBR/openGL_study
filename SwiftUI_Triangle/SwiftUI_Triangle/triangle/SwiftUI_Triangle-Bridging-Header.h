@@ -3,3 +3,4 @@
 //
 
 #include "Triangle.hpp"
+#include "CameraCircle.hpp"

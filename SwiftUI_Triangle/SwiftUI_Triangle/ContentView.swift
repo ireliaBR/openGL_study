@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            TriangleView().frame(height: 300)
+            CameraCircleView().frame(height: 300)
         }
         .padding()
         .task {

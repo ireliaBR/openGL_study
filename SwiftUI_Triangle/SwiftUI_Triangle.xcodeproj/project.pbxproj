@@ -16,9 +16,15 @@
 		69AF5C5D2B4685C500A6A80F /* camera.fs in Resources */ = {isa = PBXBuildFile; fileRef = 69AF5C5C2B4685C500A6A80F /* camera.fs */; };
 		69AF5C5F2B4685D700A6A80F /* camera.vs in Resources */ = {isa = PBXBuildFile; fileRef = 69AF5C5E2B4685D700A6A80F /* camera.vs */; };
 		69AF5C622B46866B00A6A80F /* CameraCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69AF5C602B46866B00A6A80F /* CameraCircle.cpp */; };
+		69AF782F2B469A3B00A6A80F /* awesomeface.png in Resources */ = {isa = PBXBuildFile; fileRef = 69AF782E2B469A3B00A6A80F /* awesomeface.png */; };
+		69AF78312B469A4300A6A80F /* container.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 69AF78302B469A4300A6A80F /* container.jpg */; };
+		69AF78332B469D8800A6A80F /* CameraCircleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF78322B469D8800A6A80F /* CameraCircleController.swift */; };
+		6EAE5EB0CCB552D8E6284925 /* Pods_SwiftUI_Triangle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42186FFF7F6410EDCCD6E011 /* Pods_SwiftUI_Triangle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32C799F179A77964316B7C3C /* Pods-SwiftUI_Triangle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_Triangle.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI_Triangle/Pods-SwiftUI_Triangle.debug.xcconfig"; sourceTree = "<group>"; };
+		42186FFF7F6410EDCCD6E011 /* Pods_SwiftUI_Triangle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_Triangle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AF5C382B467B7400A6A80F /* SwiftUI_Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Triangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AF5C3B2B467B7400A6A80F /* SwiftUI_TriangleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TriangleApp.swift; sourceTree = "<group>"; };
 		69AF5C3D2B467B7400A6A80F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,11 @@
 		69AF5C5E2B4685D700A6A80F /* camera.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = camera.vs; sourceTree = "<group>"; };
 		69AF5C602B46866B00A6A80F /* CameraCircle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CameraCircle.cpp; sourceTree = "<group>"; };
 		69AF5C612B46866B00A6A80F /* CameraCircle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CameraCircle.hpp; sourceTree = "<group>"; };
+		69AF782D2B46921800A6A80F /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		69AF782E2B469A3B00A6A80F /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		69AF78302B469A4300A6A80F /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+		69AF78322B469D8800A6A80F /* CameraCircleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCircleController.swift; sourceTree = "<group>"; };
+		B4364D007B9E50F738C5274C /* Pods-SwiftUI_Triangle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_Triangle.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI_Triangle/Pods-SwiftUI_Triangle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +50,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EAE5EB0CCB552D8E6284925 /* Pods_SwiftUI_Triangle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C2B79BDE885C5C0102131F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32C799F179A77964316B7C3C /* Pods-SwiftUI_Triangle.debug.xcconfig */,
+				B4364D007B9E50F738C5274C /* Pods-SwiftUI_Triangle.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		64DD57E6A088743FBED36217 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42186FFF7F6410EDCCD6E011 /* Pods_SwiftUI_Triangle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		69AF5C2F2B467B7400A6A80F = {
 			isa = PBXGroup;
 			children = (
 				69AF5C3A2B467B7400A6A80F /* SwiftUI_Triangle */,
 				69AF5C392B467B7400A6A80F /* Products */,
+				3C2B79BDE885C5C0102131F3 /* Pods */,
+				64DD57E6A088743FBED36217 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +95,7 @@
 		69AF5C3A2B467B7400A6A80F /* SwiftUI_Triangle */ = {
 			isa = PBXGroup;
 			children = (
+				69AF782B2B46920E00A6A80F /* lib */,
 				69AF5C5B2B4685A500A6A80F /* camera_circle */,
 				69AF5C542B467F7000A6A80F /* triangle */,
 				69AF5C3B2B467B7400A6A80F /* SwiftUI_TriangleApp.swift */,
@@ -96,12 +128,32 @@
 		69AF5C5B2B4685A500A6A80F /* camera_circle */ = {
 			isa = PBXGroup;
 			children = (
+				69AF78302B469A4300A6A80F /* container.jpg */,
+				69AF782E2B469A3B00A6A80F /* awesomeface.png */,
 				69AF5C5C2B4685C500A6A80F /* camera.fs */,
 				69AF5C5E2B4685D700A6A80F /* camera.vs */,
 				69AF5C602B46866B00A6A80F /* CameraCircle.cpp */,
 				69AF5C612B46866B00A6A80F /* CameraCircle.hpp */,
+				69AF78322B469D8800A6A80F /* CameraCircleController.swift */,
 			);
 			path = camera_circle;
+			sourceTree = "<group>";
+		};
+		69AF782B2B46920E00A6A80F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				69AF782C2B46921800A6A80F /* stb_image */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		69AF782C2B46921800A6A80F /* stb_image */ = {
+			isa = PBXGroup;
+			children = (
+				69AF782D2B46921800A6A80F /* stb_image.h */,
+			);
+			name = stb_image;
+			path = ../../../opengltest/lib/stb_image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69AF5C462B467B7500A6A80F /* Build configuration list for PBXNativeTarget "SwiftUI_Triangle" */;
 			buildPhases = (
+				147D346ADADE4C1C185169A1 /* [CP] Check Pods Manifest.lock */,
 				69AF5C342B467B7400A6A80F /* Sources */,
 				69AF5C352B467B7400A6A80F /* Frameworks */,
 				69AF5C362B467B7400A6A80F /* Resources */,
@@ -163,13 +216,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				69AF5C432B467B7500A6A80F /* Preview Assets.xcassets in Resources */,
+				69AF78312B469A4300A6A80F /* container.jpg in Resources */,
 				69AF5C5F2B4685D700A6A80F /* camera.vs in Resources */,
 				69AF5C5D2B4685C500A6A80F /* camera.fs in Resources */,
+				69AF782F2B469A3B00A6A80F /* awesomeface.png in Resources */,
 				69AF5C402B467B7500A6A80F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		147D346ADADE4C1C185169A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUI_Triangle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		69AF5C342B467B7400A6A80F /* Sources */ = {
@@ -180,6 +260,7 @@
 				69AF5C622B46866B00A6A80F /* CameraCircle.cpp in Sources */,
 				69AF5C592B467F7000A6A80F /* TriangleController.swift in Sources */,
 				69AF5C3C2B467B7400A6A80F /* SwiftUI_TriangleApp.swift in Sources */,
+				69AF78332B469D8800A6A80F /* CameraCircleController.swift in Sources */,
 				69AF5C5A2B467F7000A6A80F /* Triangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +389,7 @@
 		};
 		69AF5C472B467B7500A6A80F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C799F179A77964316B7C3C /* Pods-SwiftUI_Triangle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +403,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 					"GLES_SILENCE_DEPRECATION=1",
+					"STB_IMAGE_IMPLEMENTATION=1",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -345,6 +428,7 @@
 		};
 		69AF5C482B467B7500A6A80F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4364D007B9E50F738C5274C /* Pods-SwiftUI_Triangle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -354,7 +438,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Triangle/Preview Content\"";
 				DEVELOPMENT_TEAM = 7KTMC558L5;
 				ENABLE_PREVIEWS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = "GLES_SILENCE_DEPRECATION=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GLES_SILENCE_DEPRECATION=1",
+					"STB_IMAGE_IMPLEMENTATION=1",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
