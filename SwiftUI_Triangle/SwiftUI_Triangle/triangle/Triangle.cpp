@@ -8,6 +8,7 @@
 #include "Triangle.hpp"
 #include <OpenGLES/ES3/gl.h>
 #include <iostream>
+#include <unistd.h>
 
 const char *vertexShaderSource = "#version 300 es\n"
 "layout (location = 0) in vec3 aPos;\n"
@@ -17,10 +18,10 @@ const char *vertexShaderSource = "#version 300 es\n"
 "}\0";
 const char *fragmentShaderSource = "#version 300 es\n"
 "precision mediump float;\n"
-"out vec4 fragColor;\n"
+"out vec4 FragColor;\n"
 "void main()\n"
 "{\n"
-"   fragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+"   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
 "}\n\0";
 
 Triangle::Triangle(float *vertices, int size) {

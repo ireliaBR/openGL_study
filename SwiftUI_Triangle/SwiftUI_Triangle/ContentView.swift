@@ -13,6 +13,17 @@ struct ContentView: View {
             TriangleView().frame(height: 300)
         }
         .padding()
+        .task {
+            test()
+        }
+    }
+    
+    func test() {
+//        if let bundlePath = Bundle.main.bundlePath {
+            print("Bundle Path: \(Bundle.main.bundlePath)")
+//        } else {
+//            print("Unable to retrieve bundle path.")
+//        }
     }
 }
 
