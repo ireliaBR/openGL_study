@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AFE8B9C9-21F4-4AE0-9ADA-87ADAF3E5C1F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F2B11CA-0535-4636-A12D-2090C0FBBC08"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swift_CPP_Triangle/triangle/Triangle.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "Triangle::createShaderProgram()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9F2B11CA-0535-4636-A12D-2090C0FBBC08 - caa2e2318b8581be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Triangle::createShaderProgram()"
+                  moduleName = "Swift_CPP_Triangle"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdd/Documents/Github/openGL_study/Swift_CPP_Triangle/Swift_CPP_Triangle/triangle/Triangle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "9F2B11CA-0535-4636-A12D-2090C0FBBC08 - caa2e2318b8581be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Triangle::createShaderProgram()"
+                  moduleName = "Swift_CPP_Triangle"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdd/Documents/Github/openGL_study/Swift_CPP_Triangle/Swift_CPP_Triangle/triangle/Triangle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C65E703-8DF1-4989-990A-EFDC2C626167"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swift_CPP_Triangle/triangle/Triangle.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "Triangle::createShaderProgram()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1C65E703-8DF1-4989-990A-EFDC2C626167 - caa2e2318b8583ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Triangle::createShaderProgram()"
+                  moduleName = "Swift_CPP_Triangle"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdd/Documents/Github/openGL_study/Swift_CPP_Triangle/Swift_CPP_Triangle/triangle/Triangle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "1C65E703-8DF1-4989-990A-EFDC2C626167 - caa2e2318b85832b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Triangle::createShaderProgram()"
+                  moduleName = "Swift_CPP_Triangle"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdd/Documents/Github/openGL_study/Swift_CPP_Triangle/Swift_CPP_Triangle/triangle/Triangle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "420">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

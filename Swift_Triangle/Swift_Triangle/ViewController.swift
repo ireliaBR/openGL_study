@@ -21,6 +21,9 @@ class ViewController: GLKViewController {
         EAGLContext.setCurrent(glkView.context)
 
         setupOpenGL()
+//        for person in allPerson() {
+//            print(person.name, person.age)
+//        }
     }
 
     func setupOpenGL() {
