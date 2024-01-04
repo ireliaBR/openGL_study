@@ -68,8 +68,8 @@ int main() {
 
     glEnable(GL_DEPTH_TEST);
 
-    Shader lightingShader("shader/multiple_lights.vs", "shader/multiple_lights.fs");
-    Shader lightCubeShader("shader/light_cube.vs", "shader/light_cube.fs");
+    Shader lightingShader("/Users/fdd/Documents/Github/openGL_study/opengltest/shader/multiple_lights.vs", "/Users/fdd/Documents/Github/openGL_study/opengltest/shader/multiple_lights.fs");
+    Shader lightCubeShader("/Users/fdd/Documents/Github/openGL_study/opengltest/shader/light_cube.vs", "/Users/fdd/Documents/Github/openGL_study/opengltest/shader/light_cube.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------

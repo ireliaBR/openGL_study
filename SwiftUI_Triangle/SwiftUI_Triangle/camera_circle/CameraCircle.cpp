@@ -39,6 +39,8 @@ void CameraCircle::setup() {
 }
 
 void CameraCircle::draw(float width, float height, double time) {
+    
+    glViewport(0, 0, width, height);
     glm::mat4 projection = glm::perspective(glm::radians(45.0f), width / height, 0.1f, 100.0f);
     glUniformMatrix4fv(glGetUniformLocation(program, "projection"), 1, GL_FALSE, &projection[0][0]);
     
