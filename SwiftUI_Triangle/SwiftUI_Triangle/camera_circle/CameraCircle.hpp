@@ -24,6 +24,7 @@ private:
     void createProgram();
     void createTexture();
     void checkCompileErrors(uint32_t shader, std::string type);
+    unsigned int loadTexture(std::string path);
 public:
     CameraCircle(const char *workPath);
     ~CameraCircle();
