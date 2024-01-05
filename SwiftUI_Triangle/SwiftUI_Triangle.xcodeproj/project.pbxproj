@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		32C799F179A77964316B7C3C /* Pods-SwiftUI_Triangle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_Triangle.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI_Triangle/Pods-SwiftUI_Triangle.debug.xcconfig"; sourceTree = "<group>"; };
 		42186FFF7F6410EDCCD6E011 /* Pods_SwiftUI_Triangle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_Triangle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		690D11E72B47A3E7004A5A29 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		69AF5C382B467B7400A6A80F /* SwiftUI_Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Triangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AF5C3B2B467B7400A6A80F /* SwiftUI_TriangleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TriangleApp.swift; sourceTree = "<group>"; };
 		69AF5C3D2B467B7400A6A80F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		69AF5C5E2B4685D700A6A80F /* camera.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = camera.vs; sourceTree = "<group>"; };
 		69AF5C602B46866B00A6A80F /* CameraCircle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CameraCircle.cpp; sourceTree = "<group>"; };
 		69AF5C612B46866B00A6A80F /* CameraCircle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CameraCircle.hpp; sourceTree = "<group>"; };
-		69AF782D2B46921800A6A80F /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		69AF782E2B469A3B00A6A80F /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 		69AF78302B469A4300A6A80F /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
 		69AF78322B469D8800A6A80F /* CameraCircleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCircleController.swift; sourceTree = "<group>"; };
@@ -74,6 +74,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		690D11E52B47A3CA004A5A29 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				690D11E62B47A3E7004A5A29 /* stb_image */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		690D11E62B47A3E7004A5A29 /* stb_image */ = {
+			isa = PBXGroup;
+			children = (
+				690D11E72B47A3E7004A5A29 /* stb_image.h */,
+			);
+			path = stb_image;
+			sourceTree = "<group>";
+		};
 		69AF5C2F2B467B7400A6A80F = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +111,7 @@
 		69AF5C3A2B467B7400A6A80F /* SwiftUI_Triangle */ = {
 			isa = PBXGroup;
 			children = (
-				69AF782B2B46920E00A6A80F /* lib */,
+				690D11E52B47A3CA004A5A29 /* lib */,
 				69AF5C5B2B4685A500A6A80F /* camera_circle */,
 				69AF5C542B467F7000A6A80F /* triangle */,
 				69AF5C3B2B467B7400A6A80F /* SwiftUI_TriangleApp.swift */,
@@ -137,23 +153,6 @@
 				69AF78322B469D8800A6A80F /* CameraCircleController.swift */,
 			);
 			path = camera_circle;
-			sourceTree = "<group>";
-		};
-		69AF782B2B46920E00A6A80F /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				69AF782C2B46921800A6A80F /* stb_image */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		69AF782C2B46921800A6A80F /* stb_image */ = {
-			isa = PBXGroup;
-			children = (
-				69AF782D2B46921800A6A80F /* stb_image.h */,
-			);
-			name = stb_image;
-			path = ../../../opengltest/lib/stb_image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -63,7 +63,7 @@ void CameraCircle::draw(float width, float height, double time) {
     float radius = 10.0f;
     float camX = static_cast<float>(sin(time) * radius);
     float camZ = static_cast<float>(cos(time) * radius);
-    view = glm::lookAt(glm::vec3(camX, 0.0f, camZ), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    view = glm::lookAt(glm::vec3(0.0f, 0.0f, -100), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
     glUniformMatrix4fv(glGetUniformLocation(program, "view"), 1, GL_FALSE, &view[0][0]);
     
     // render boxes
@@ -256,6 +256,7 @@ void CameraCircle::createProgram() {
     // delete the shaders as they're linked into our program now and no longer necessary
     glDeleteShader(vertex);
     glDeleteShader(fragment);
+    glUseProgram(program);
 }
 
 // utility function for checking shader compilation/linking errors.
