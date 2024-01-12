@@ -44,10 +44,9 @@ class ViewController: GLKViewController {
     
     let element = {
         var element = Element(x: 100, y: 100, width: 100, height: 200)
-        var transform = CATransform3DIdentity
-//        transform = CATransform3DTranslate(transform, 20, 20, 0)
-//        transform = CATransform3DScale(transform, 2, 2, 1)
-        element.transform = transform
+        element.tranlate(tx: 100, ty: 100, tz: 0)
+        element.scale(sx: 1.5, sy: 1.5, sz: 1)
+        element.rotate(angle: 3.14 / 4, 0, 0, 1)
         return element
     }()
     
@@ -72,7 +71,23 @@ class ViewController: GLKViewController {
                 make.left.equalTo(100)
                 make.top.equalTo(100)
             }
-//            testView.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)
+            var transform = CGAffineTransformIdentity
+            transform = CGAffineTransformTranslate(transform, 100, 100)
+            transform = CGAffineTransformScale(transform, 1.5, 1.5)
+            transform = CGAffineTransformRotate(transform, 3.14 / 4)
+            testView.transform = transform
+            
+            let test2View = UIView()
+            test2View.layer.borderColor = UIColor.green.cgColor
+            test2View.layer.borderWidth = 4
+            test2View.backgroundColor = .clear
+            self.view.addSubview(test2View)
+            test2View.snp.makeConstraints { make in
+                make.width.equalTo(100)
+                make.height.equalTo(200)
+                make.left.equalTo(100)
+                make.top.equalTo(100)
+            }
         }
     }
 

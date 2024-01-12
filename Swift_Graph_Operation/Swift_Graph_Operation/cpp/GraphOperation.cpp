@@ -33,15 +33,17 @@ void GraphOperation::draw(float screenWidth, float screenHeight, ConvertElement 
     projection = glm::scale(projection, glm::vec3(1.0f, screenWidth / screenHeight, 1.0f));
     glUniformMatrix4fv(glGetUniformLocation(program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
     
-    float x = element.x * 2 / screenWidth;
-    float y = (screenHeight - element.height - element.y) * 2 / screenWidth;
+    float x = (element.x + element.width / 2) * 2 / screenWidth;
+    float y = (screenHeight - element.height / 2 - element.y) * 2 / screenWidth;
     float width = element.width * 2 / screenWidth;
     float height = element.height * 2 / screenWidth;
+    element.transform[3][0] = element.transform[3][0] * 2 / screenWidth;
+    element.transform[3][1] = element.transform[3][1] * 2 / screenWidth;
     // (screenHeight - element.height) / 2
     glm::mat4 model = glm::mat4(1.0f);
-    model = element.transform * model;
     model = glm::translate(model, glm::vec3(x, y, 0));
-    model = glm::translate(model, glm::vec3(-((screenWidth - element.width) / 2 * 2 / screenWidth), -((screenHeight - element.height) / 2 * 2 / screenWidth), 0));
+    model = glm::translate(model, glm::vec3(-(screenWidth / 2 * 2 / screenWidth), -(screenHeight / 2 * 2 / screenWidth), 0));
+    model =  model * element.transform;
     model = glm::scale(model, glm::vec3(width, height, 1));
     
     glUniformMatrix4fv(glGetUniformLocation(program, "model"), 1, GL_FALSE, glm::value_ptr(model));

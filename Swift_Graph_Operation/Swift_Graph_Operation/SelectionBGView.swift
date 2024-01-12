@@ -12,26 +12,27 @@ class SelectionBGView: UIView {
     
     let selectView = {
         let view = UIView()
-        view.layer.borderColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.8).cgColor
-        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.green.cgColor
+        view.layer.borderWidth = 2
         return view
     }()
     
-    let selectFrame: CGRect
+    var element: Element
     
-    init(selectFrame: CGRect) {
-        self.selectFrame = selectFrame
+    init(element: Element) {
+        self.element = element
         super.init(frame: CGRectZero)
     }
     
     func setupView() {
         addSubview(selectView)
         selectView.snp.makeConstraints { make in
-            make.left.equalToSuperview().inset(CGRectGetMinX(selectFrame))
-            make.top.equalToSuperview().inset(CGRectGetMinY(selectFrame))
-            make.width.equalTo(CGRectGetWidth(selectFrame))
-            make.height.equalTo(CGRectGetHeight(selectFrame))
+            make.left.equalToSuperview().inset(element.x)
+            make.top.equalToSuperview().inset(element.y)
+            make.width.equalTo(element.width)
+            make.height.equalTo(element.height)
         }
+        selectView.layer.transform = element.transform
     }
     
     required init?(coder: NSCoder) {
