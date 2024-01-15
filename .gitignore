@@ -2,4 +2,11 @@ build/
 .vscode/
 .DS_Store
 Pods/
+ *.xcuserstate
+project.xcworkspace
+xcuserdata
+UserInterfaceState.xcuserstate
+project.xcworkspace/
+xcuserdata/
+UserInterface.xcuserstate
 
