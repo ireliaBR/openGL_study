@@ -1,0 +1,30 @@
+PODS:
+  - freetype2 (2.10.1.16):
+    - freetype2/freetype (= 2.10.1.16)
+  - freetype2/freetype (2.10.1.16):
+    - freetype2/freetype/config (= 2.10.1.16)
+  - freetype2/freetype/config (2.10.1.16)
+  - glm (0.9.4.6)
+  - LookinServer (1.2.4):
+    - LookinServer/Core (= 1.2.4)
+  - LookinServer/Core (1.2.4)
+
+DEPENDENCIES:
+  - freetype2
+  - glm
+  - LookinServer
+
+SPEC REPOS:
+  trunk:
+    - freetype2
+    - glm
+    - LookinServer
+
+SPEC CHECKSUMS:
+  freetype2: 638066e0b9baa2387a4ba577644cd07eeda67347
+  glm: e22c8d9df10404059b19c2952f9fa44d9a9f3056
+  LookinServer: 00c7588043ed8e7ab64ce55b9fb747e51371ad06
+
+PODFILE CHECKSUM: 8e064f63123d374af7773ceb7755b8f2b693c643
+
+COCOAPODS: 1.14.2
